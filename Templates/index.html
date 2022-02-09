@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+<title>William Bell - Student and Software Engineer</title>
+	<meta charset="utf-8" />
+	<meta name="description" content="William Bell is a Computer Science major at Howard University and a Software Engineering intern at Google." />
+	<meta name="keywords" content="William Bell, computer science, Howard University, Washington DC, Google" />
+	<meta name="author" content="William Bell" />
+	<meta name="robots" content="index, follow">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="apple-touch-icon" href="https://jonphillips.ca/apple-touch-icon.png" />
+  <link rel="Shortcut Icon" href="https://jonphillips.ca/favicon.ico" type="image/x-icon" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://jonphillips.ca/style.css" type="text/css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6641774/6521572/css/fonts.css" />
+	<style type="text/css">
+  main {
+    background-image: url("tree-background.png");
+    background-repeat: no-repeat;
+  }
+  </style>
+</head>
+
+<main class="container">
+	<section class="content">
+		<h1>William Bell</h1>
+		<p id="desc"></p>
+		<a href="mailto:williamdbell97@gmail.com" title="Email William Bell">Contact</a>
+	</section>
+</main>
+
+<footer>
+	<a class="tw" href="https://twitter.com/billiamwell" title="William Bell on Twitter">
+	  <img src="twitter-icon.png" width="50" height="50" class="icon-twitter">
+	</span></a>
+	<a class="fb" href="https://www.facebook.com/william.bell.1232" title="William Bell on Facebook">
+    <img src="facebook-icon.png" width="50" height="50" class="icon-facebook">
+	</span></a>
+	<a class="ig" href="https://www.instagram.com/billiamwell/" title="William Bell on Instagram">
+    <img src="instagram-icon.png" width="50" height="50" class"icon-instagram">
+	</span></a>
+	<a class="li" href="https://www.linkedin.com/in/williamdbell/" title="William Bell on LinkedIn">
+    <img src="linkdin-icon.png" width="50" height="50" class="icon-linkedin">
+	</span></a>
+</footer>
+
+<script>
+var showText = function (target, message, index, interval) {
+	if (index < message.length) {
+		$(target).append(message[index++]);
+		setTimeout(function () { showText(target, message, index, interval); }, interval);
+	}
+}
+$(function () {
+	showText("#desc", "Computer Science, Howard 2019", 0, 100);
+});
+</script>
+</body>
+</html>
